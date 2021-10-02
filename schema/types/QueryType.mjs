@@ -1,7 +1,7 @@
 import { GraphQLObjectType, GraphQLList, GraphQLSchema, GraphQLInt } from 'graphql';
-import LaunchType from './LaunchType.js';
+import LaunchType from './LaunchType.mjs';
 import fetch from 'node-fetch';
-import RocketType from './rocketType.js';
+import RocketType from './rocketType.mjs';
 
 const RootQuery = new GraphQLObjectType({
 	name: 'RootQueryType',

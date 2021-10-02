@@ -1,5 +1,5 @@
 import { GraphQLObjectType, GraphQLInt, GraphQLString, GraphQLBoolean } from 'graphql';
-import RocketType from './rocketType.js';
+import RocketType from './rocketType.mjs';
 
 const LaunchType = new GraphQLObjectType({
 	name: 'Launch',
