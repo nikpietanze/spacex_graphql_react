@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"start": "node server.mjs",
-		"server": "nodemon server.mjs",
+		"start": "node --experimental-specifier-resolution=node server.js",
+		"server": "nodemon server.js",
 		"client": "pnpm dev --prefix web",
 		"dev": "concurrently \"pnpm run server\" \"pnpm run client\"",
 		"lint": "prettier --ignore-path .gitignore  --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
